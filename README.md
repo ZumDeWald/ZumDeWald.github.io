@@ -16,6 +16,6 @@ _All consideration given to the Udacity style guides and project rubric_
 
     * Once the page loads, the board is set!
     * The timer will start once you make your first selection and stop as soon as all matches are found
-      --> _Try to set a new speed record!_
+      --> Try to set a new speed record!
     * You begin with three stars. The more moves it takes to find matches, the fewer stars you keep, so choose wisely!
-    * Once all matches are found the times stops and the **bragging** can begin!
+    * Once all matches are found the times stops and the BRAGGING can begin!
