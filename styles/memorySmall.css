@@ -1,0 +1,156 @@
+/* General Style Applications  */
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif, arial;
+}
+
+/* Oversizing catch-all */
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+/* Remove underline from links */
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* HEADER */
+
+.page-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 1em;
+  background-color: #80888e;
+}
+
+.header-title {
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* GAMEBOARD */
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  width: 100%;
+}
+
+.board-top-options {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  height: 30px;
+  background-color: #000;
+}
+
+.stars-section {
+  background-color: blue;
+  color: #fff;
+}
+
+.timer-section {
+  background-color: red;
+  color: #fff;
+}
+
+.reset-section {
+  background-color: gray;
+  color: #fff;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  height: 900px;
+  min-width: 150px;
+  max-width: 900px;
+  background-color: #a5acb1;
+  border-radius: 8px;
+}
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.match-one {
+  background-color: blue;
+}
+
+.match-two {
+  background-color: red;
+}
+
+.match-three {
+  background-color: gray;
+}
+
+.match-four {
+  background-color: green;
+}
+
+.match-five {
+  background-color: yellow;
+}
+
+.match-six {
+  background-color: pink;
+}
+
+.match-seven {
+  background-color: purple;
+}
+
+.match-eight {
+  background-color: black;
+}
+
+
+/* FOOTER */
+
+.footer {
+
+}
