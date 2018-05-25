@@ -106,6 +106,16 @@ a:active {
   border-radius: 8px;
 }
 
+.card-back {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  background-color: #547CCC;
+  border-radius: 10px;
+}
+
 .card {
   display: flex;
   flex-flow: row nowrap;
@@ -116,36 +126,68 @@ a:active {
   border-radius: 10px;
 }
 
-.match-one {
-
+.match-anchor-one {
+  display: none;
 }
 
-.match-two {
-
+.match-anchor-two {
+  display: none;
 }
 
-.match-three {
-
+.match-bomb-one {
+  display: none;
 }
 
-.match-four {
-
+.match-bomb-two {
+  display: none;
 }
 
-.match-five {
-
+.match-heart-one {
+  display: none;
 }
 
-.match-six {
-
+.match-heart-two {
+  display: none;
 }
 
-.match-seven {
-
+.match-bike-one {
+  display: none;
 }
 
-.match-eight {
+.match-bike-two {
+  display: none;
+}
 
+.match-note-one {
+  display: none;
+}
+
+.match-note-two {
+  display: none;
+}
+
+.match-rocket-one {
+  display: none;
+}
+
+.match-rocket-two {
+  display: none;
+}
+
+.match-umbrella-one {
+  display: none;
+}
+
+.match-umbrella-two {
+  display: none;
+}
+
+.match-jet-one {
+  display: none;
+}
+
+.match-jet-two {
+  display: none;
 }
 
 
