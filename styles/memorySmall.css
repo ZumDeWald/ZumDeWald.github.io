@@ -112,40 +112,40 @@ a:active {
   justify-content: center;
   align-items: center;
   margin: 12px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 10px;
 }
 
 .match-one {
-  background-color: blue;
+
 }
 
 .match-two {
-  background-color: red;
+
 }
 
 .match-three {
-  background-color: gray;
+
 }
 
 .match-four {
-  background-color: green;
+
 }
 
 .match-five {
-  background-color: yellow;
+
 }
 
 .match-six {
-  background-color: pink;
+
 }
 
 .match-seven {
-  background-color: purple;
+
 }
 
 .match-eight {
-  background-color: black;
+
 }
 
 
