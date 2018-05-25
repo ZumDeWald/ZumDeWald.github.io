@@ -102,9 +102,13 @@ a:active {
   height: 900px;
   min-width: 150px;
   max-width: 900px;
+  padding: 5px;
   background-color: #a5acb1;
   border-radius: 8px;
 }
+
+
+/* CARDS */
 
 .card-back {
   display: flex;
@@ -126,69 +130,80 @@ a:active {
   border-radius: 10px;
 }
 
-.match-anchor-one {
+.card-hide {
   display: none;
+}
+
+
+/* CARD FACES */
+
+.match-anchor-one {
+
 }
 
 .match-anchor-two {
-  display: none;
+
 }
 
 .match-bomb-one {
-  display: none;
+
 }
 
 .match-bomb-two {
-  display: none;
+
 }
 
 .match-heart-one {
-  display: none;
+
 }
 
 .match-heart-two {
-  display: none;
+
 }
 
 .match-bike-one {
-  display: none;
+
 }
 
 .match-bike-two {
-  display: none;
+
 }
 
 .match-note-one {
-  display: none;
+
 }
 
 .match-note-two {
-  display: none;
+
 }
 
 .match-rocket-one {
-  display: none;
+
 }
 
 .match-rocket-two {
-  display: none;
+
 }
 
 .match-umbrella-one {
-  display: none;
+
 }
 
 .match-umbrella-two {
-  display: none;
+
 }
 
 .match-jet-one {
-  display: none;
+
 }
 
 .match-jet-two {
-  display: none;
+
 }
+
+
+/* CARD BACK */
+
 
 
 /* FOOTER */
