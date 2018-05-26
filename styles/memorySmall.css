@@ -111,13 +111,22 @@ a:active {
 
 /* CARDS */
 
-.card {
+.card-hide {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  margin: 12px;
+  background-color: #80888e;
+  border-radius: 10px;
+  font-size: 0;
+}
+
+.card-show {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   margin: 12px;
   background-color: #fff;
   border-radius: 10px;
