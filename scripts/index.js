@@ -1,19 +1,23 @@
+$(document).ready(() => {
 
 /* VARIABLES */
 
-const card = ${".card-back"}
+const card = $(".card-back");
 
 
 /* FUNCTIONS */
 
-$(document).ready(() => {
-
 /* Flip Card on Click */
 
- card.click(() => {
-   
- })
+let cardShowing = false;
+
+ card.click((e) => {
+   if (!cardShowing) {
+     $(e.target).toggleClass("card-hide");
+     $(e.target).next().toggleClass("card-hide");
+  }
+});
 
 
 
-})
+});
