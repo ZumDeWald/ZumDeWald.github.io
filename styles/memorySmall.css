@@ -116,106 +116,12 @@ a:active {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-}
-
-.card-back {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 12px;
-  background-color: #547CCC;
-  border-radius: 10px;
-}
-
-.card-face {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   margin: 12px;
   background-color: #fff;
   border-radius: 10px;
 }
-
-.card-hide {
-  display: none;
-}
-
-
-/* CARD FACES */
-
-.match-anchor-one {
-
-}
-
-.match-anchor-two {
-
-}
-
-.match-bomb-one {
-
-}
-
-.match-bomb-two {
-
-}
-
-.match-heart-one {
-
-}
-
-.match-heart-two {
-
-}
-
-.match-bike-one {
-
-}
-
-.match-bike-two {
-
-}
-
-.match-note-one {
-
-}
-
-.match-note-two {
-
-}
-
-.match-rocket-one {
-
-}
-
-.match-rocket-two {
-
-}
-
-.match-umbrella-one {
-
-}
-
-.match-umbrella-two {
-
-}
-
-.match-jet-one {
-
-}
-
-.match-jet-two {
-
-}
-
-
-/* CARD BACK */
-
 
 
 /* FOOTER */
