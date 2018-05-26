@@ -2,20 +2,19 @@ $(document).ready(() => {
 
 /* VARIABLES */
 
-const card = $(".card-back");
+const card = $(".card, .card>*");
 
 
 /* FUNCTIONS */
 
+const showCard = (target) => {
+  target.children().toggleClass("card-hide");
+};
+
 /* Flip Card on Click */
 
-let cardShowing = false;
-
  card.click((e) => {
-   if (!cardShowing) {
-     $(e.target).toggleClass("card-hide");
-     $(e.target).next().toggleClass("card-hide");
-  }
+   showCard($(e.target));
 });
 
 
