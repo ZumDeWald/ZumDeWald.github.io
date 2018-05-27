@@ -12,14 +12,17 @@ const cardFlip = (target) => {
   target.toggleClass("card-hide");
 };
 
-/* Match & No Match Animation
-const yesMatch = (target) => {
-  target.;
+/* Match & No Match Animation */
+const yesMatch = () => {
+  $(".marker").animate({
+    margin: ["20px", "swing"]
+  });
 };
 
-const noMatch = (target) => {
-  target.;
-}; */
+const noMatch = () => {
+  $(".marker").animate({
+  });
+};
 
 /* Check if card matches */
 
@@ -34,22 +37,20 @@ let cardValue = "";
     This seemed a better route than trying to set a const and manage it */
 $(".game-board").on("click", ".card-hide", (e) =>{
   cardFlip($(e.target));
+  $(e.target).addClass("marker");
   if (!cardShowing) {
-    $(e.target).addClass("marker");
     cardValue = $(e.target).children().attr("class");
     cardShowing = true;
   } else {
     if (cardValue == $(e.target).children().attr("class")) {
-//      yesMatch($(e.target));
+      yesMatch();
     } else {
-      $(e.target).addClass("marker");
-//      noMatch($(e.target));
+//      noMatch();
       cardFlip($(".marker"));
     };
     $("li").removeClass("marker");
     cardShowing = false;
   }
  });
-
 
 });
