@@ -10,7 +10,16 @@ $(document).ready(() => {
 const cardFlip = (target) => {
   target.toggleClass("card-show");
   target.toggleClass("card-hide");
-}
+};
+
+/* Match & No Match Animation
+const yesMatch = (target) => {
+  target.;
+};
+
+const noMatch = (target) => {
+  target.;
+}; */
 
 /* Check if card matches */
 
@@ -31,14 +40,13 @@ $(".game-board").on("click", ".card-hide", (e) =>{
     cardShowing = true;
   } else {
     if (cardValue == $(e.target).children().attr("class")) {
-      alert("You Got A Match!");
-      card.removeClass("marker");
+//      yesMatch($(e.target));
     } else {
       $(e.target).addClass("marker");
-      alert("Sorry, not a match");
+//      noMatch($(e.target));
       cardFlip($(".marker"));
-      card.removeClass("marker");
-    }
+    };
+    $("li").removeClass("marker");
     cardShowing = false;
   }
  });
