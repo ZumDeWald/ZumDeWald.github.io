@@ -23,17 +23,12 @@ $(document).ready(() => {
     target.toggleClass("card-hide");
   };
 
-  //Match & No Match Animation
+  //Match Animation
   const yesMatch = () => {
     $(".marker").animate({
       margin: ["20px", "swing"]
     });
   };
-
-  const noMatch = () => {
-    $(".marker").animate({
-    });
-  }
 
   //Remove Stars after number of clicks
   const removeStar = (selector) => {
@@ -45,7 +40,7 @@ $(document).ready(() => {
   // 'clickable' after they are shown face up
   $(".game-board").on("click", ".card-hide", (e) =>{
 
-    //Counts clicks user makes and removes stars are so many
+    //Counts clicks user makes and removes stars after so many
     clickCount += 1;
     if (clickCount > 45) {
         removeStar(".first-star");
@@ -81,12 +76,14 @@ $(document).ready(() => {
         yesMatch();
         cardMatches++;
       } else {
-  //      noMatch();
-        cardFlip($(".marker"));
+        setTimeout(() => {
+          $(".marker").toggleClass("card-show");
+          $(".marker").toggleClass("card-hide");
+        }, 800);
       };
 
       //Removes markers, resets cardShowing value, records matches
-      allCards.removeClass("marker");
+      setTimeout(() => { allCards.removeClass("marker") }, 1000);
       cardShowing = false;
     };
 
