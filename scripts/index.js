@@ -79,11 +79,11 @@ $(document).ready(() => {
         setTimeout(() => {
           $(".marker").toggleClass("card-show");
           $(".marker").toggleClass("card-hide");
-        }, 800);
+        }, 700);
       };
 
       //Removes markers, resets cardShowing value, records matches
-      setTimeout(() => { allCards.removeClass("marker") }, 1000);
+      setTimeout(() => { allCards.removeClass("marker") }, 800);
       cardShowing = false;
     };
 
