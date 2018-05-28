@@ -6,10 +6,14 @@ $(document).ready(() => {
   let clickCount = 0;
   let cardShowing = false;
   let cardValue = "";
+  let timeKeeper = 0;
+  let cardMatches = 0;
+  let timer = "";
 
   const allCards = $("li");
   const starSection = $(".star-section");
   const resetButton = $(".reset-section");
+  const timeCounter = $(".time");
 
 
   /* FUNCTIONS */
@@ -52,6 +56,14 @@ $(document).ready(() => {
         removeStar(".third-star");
     };
 
+    //Starts timer
+    if (clickCount === 1) {
+      let timer = setInterval (() => {
+      timeKeeper++;
+      timeCounter.text(timeKeeper);
+      }, 1000);
+    }
+
     //Flips Cards
     cardFlip($(e.target));
 
@@ -73,16 +85,22 @@ $(document).ready(() => {
         cardFlip($(".marker"));
       };
 
-      //Removes markers and resets cardShowing value
+      //Removes markers, resets cardShowing value, records matches
       $("li").removeClass("marker");
       cardShowing = false;
+      cardMatches++;
+
+      if (cardMatches === 8) {
+        clearInterval(timer);
+      }
     }
    });
 
 
    // RESET GameBoard
    resetButton.click(() => {
-     allCards.removeClass("card-show");
+     location.reload();
+/*   allCards.removeClass("card-show");
      allCards.addClass("card-hide");
      allCards.removeClass("marker");
      allCards.css("margin", "12px");
@@ -90,6 +108,9 @@ $(document).ready(() => {
      starSection.children().addClass("fas");
      clickCount = 0;
      cardShowing = false;
+     clearInterval(timer);
+     timeCounter.text(0);
+     cardMatches = 0;*/
    })
 
 });
