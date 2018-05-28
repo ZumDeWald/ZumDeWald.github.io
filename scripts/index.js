@@ -7,7 +7,9 @@ $(document).ready(() => {
   let cardShowing = false;
   let cardValue = "";
 
+  const allCards = $("li");
   const starSection = $(".star-section");
+  const resetButton = $(".reset-section");
 
 
   /* FUNCTIONS */
@@ -42,9 +44,9 @@ $(document).ready(() => {
 
     //Counts clicks user makes and removes stars are so many
     clickCount += 1;
-    if (clickCount > 32) {
+    if (clickCount > 45) {
         removeStar(".first-star");
-      } else if (clickCount > 25) {
+      } else if (clickCount > 32) {
         removeStar(".second-star");
       } else if (clickCount > 16) {
         removeStar(".third-star");
@@ -76,5 +78,18 @@ $(document).ready(() => {
       cardShowing = false;
     }
    });
+
+
+   // RESET GameBoard
+   resetButton.click(() => {
+     allCards.removeClass("card-show");
+     allCards.addClass("card-hide");
+     allCards.removeClass("marker");
+     allCards.css("margin", "12px");
+     starSection.children().removeClass("far");
+     starSection.children().addClass("fas");
+     clickCount = 0;
+     cardShowing = false;
+   })
 
 });
