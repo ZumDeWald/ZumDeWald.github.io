@@ -8,7 +8,6 @@ $(document).ready(() => {
   let cardValue = "";
   let timeKeeper = 0;
   let cardMatches = 0;
-  let timer = "";
 
   const allCards = $("li");
   const starSection = $(".star-section");
@@ -58,11 +57,11 @@ $(document).ready(() => {
 
     //Starts timer
     if (clickCount === 1) {
-      let timer = setInterval (() => {
+      const timer = setInterval (() => {
       timeKeeper++;
       timeCounter.text(timeKeeper);
-      }, 1000);
-    }
+    }, 1000);
+  };
 
     //Flips Cards
     cardFlip($(e.target));
@@ -80,22 +79,23 @@ $(document).ready(() => {
     } else {
       if (cardValue == $(e.target).children().attr("class")) {
         yesMatch();
+        cardMatches++;
       } else {
   //      noMatch();
         cardFlip($(".marker"));
       };
 
       //Removes markers, resets cardShowing value, records matches
-      $("li").removeClass("marker");
+      allCards.removeClass("marker");
       cardShowing = false;
-      cardMatches++;
+    };
 
-      if (cardMatches === 8) {
-        clearInterval(timer);
-      }
-    }
-   });
+   })
 
+   if (cardMatches === 8) {
+     clearInterval(timer);
+     timer = 0;
+   };
 
    // RESET GameBoard
    resetButton.click(() => {
