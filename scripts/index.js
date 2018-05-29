@@ -9,6 +9,7 @@ $(document).ready(() => {
   let timeKeeper = 0;
   let cardMatches = 0;
   let randomNumber = 1 + Math.floor(Math.random() * 16);
+  let timer;
 
   const allCards = $("li");
   const starSection = $(".star-section");
@@ -39,6 +40,7 @@ $(document).ready(() => {
     });
     cardMatches++;
     if (cardMatches === 8) {
+      clearInterval(timer);
       allCards.toggleClass("win");
       $(".popup").toggleClass("show");
     }
@@ -72,27 +74,27 @@ $(document).ready(() => {
         attempts.text(clickCount / 2);
       }
 
-      //Starts timer
+      // Starts / Stops timer
       if (clickCount === 1) {
-        const timer = setInterval (() => {
+        timer = setInterval (() => {
         timeKeeper++;
         timeCounter.text(timeKeeper);
-      }, 1000);
-    };
+        }, 1000);
+      }
 
-      //Flips Cards
+      // Flips Cards
       cardFlip($(e.target));
 
-      //Add marker to shown card, used to flip back over if needed
+      // Add marker to shown card, used to flip back over if needed
       $(e.target).addClass("marker");
 
-      //Gets value of first card flipped and lets logic know a card is now
-      //showing face-up
+      // Gets value of first card flipped and logs that a card is now
+      // showing face-up
       if (!cardShowing) {
         cardValue = $(e.target).children().attr("class");
         cardShowing = true;
 
-      //Checks if second card flipped matches first and trigger response
+      // Checks if second card flipped matches first and trigger response
       } else {
         if (cardValue == $(e.target).children().attr("class")) {
           yesMatch()
@@ -103,7 +105,7 @@ $(document).ready(() => {
           }, 600);
         };
 
-        //Removes markers, resets cardShowing value
+        // Removes markers, resets cardShowing value
         setTimeout(() => { allCards.removeClass("marker") }, 700);
         cardShowing = false;
       };
