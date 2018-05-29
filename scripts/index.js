@@ -8,6 +8,7 @@ $(document).ready(() => {
   let cardValue = "";
   let timeKeeper = 0;
   let cardMatches = 0;
+  let randomNumber = 1 + Math.floor(Math.random() * 16);
 
   const allCards = $("li");
   const starSection = $(".star-section");
@@ -17,13 +18,19 @@ $(document).ready(() => {
 
   /* FUNCTIONS */
 
+  //Randomize Order | uses .each() to loop over, then assign random number
+  //between 1 and 50
+  $("li").each(function() {
+      randomNumber = 1 + Math.floor(Math.random() * 50);
+      $(this).css({"order": randomNumber});})
+
   //Flip Card on Click
   const cardFlip = (target) => {
     target.toggleClass("card-show");
     target.toggleClass("card-hide");
   };
 
-  //Match Animation
+  //Match Animation && Trigger end of game when last match is made
   const yesMatch = () => {
     $(".marker").animate({
       margin: ["20px"]
