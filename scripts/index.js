@@ -38,6 +38,7 @@ $(document).ready(() => {
     cardMatches++;
     if (cardMatches === 8) {
       allCards.toggleClass("win");
+      $(".popup").toggleClass("show");
     }
   };
 
