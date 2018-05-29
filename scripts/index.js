@@ -26,8 +26,12 @@ $(document).ready(() => {
   //Match Animation
   const yesMatch = () => {
     $(".marker").animate({
-      margin: ["20px", "swing"]
+      margin: ["20px"]
     });
+    cardMatches++;
+    if (cardMatches === 8) {
+      allCards.toggleClass("win");
+    }
   };
 
   //Remove Stars after number of clicks
@@ -35,6 +39,8 @@ $(document).ready(() => {
     starSection.children(selector).removeClass("fas").addClass("far");
   }
 
+
+  /* TRIGGER EVENT TO START GAME */
 
   // Used 'Event Delegation' here to manage cards not becoming
   // 'clickable' after they are shown face up
@@ -73,26 +79,20 @@ $(document).ready(() => {
     //Checks if second card flipped matches first and trigger response
     } else {
       if (cardValue == $(e.target).children().attr("class")) {
-        yesMatch();
-        cardMatches++;
+        yesMatch()
       } else {
         setTimeout(() => {
           $(".marker").toggleClass("card-show");
           $(".marker").toggleClass("card-hide");
-        }, 700);
+        }, 600);
       };
 
-      //Removes markers, resets cardShowing value, records matches
-      setTimeout(() => { allCards.removeClass("marker") }, 800);
+      //Removes markers, resets cardShowing value
+      setTimeout(() => { allCards.removeClass("marker") }, 700);
       cardShowing = false;
     };
-
    })
 
-   if (cardMatches === 8) {
-     clearInterval(timer);
-     timer = 0;
-   };
 
    // RESET GameBoard
    resetButton.click(() => {

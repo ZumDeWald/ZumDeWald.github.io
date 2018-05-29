@@ -132,9 +132,9 @@ a:active {
   transition: all 0.2s ease;
 }
 
-.no-match {
-  font-size: 18px;
-  transition: all 0.2s ease;
+.win {
+  margin: 12px;
+  border: solid #57BB71;
 }
 
 
