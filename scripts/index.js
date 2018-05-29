@@ -61,9 +61,9 @@ $(document).ready(() => {
 
       // Counts clicks user makes and removes stars after so many
       clickCount += 1;
-      if (clickCount > 45) {
+      if (clickCount > 50) {
           removeStar(".first-star");
-        } else if (clickCount > 32) {
+        } else if (clickCount > 36) {
           removeStar(".second-star");
         } else if (clickCount > 16) {
           removeStar(".third-star");
