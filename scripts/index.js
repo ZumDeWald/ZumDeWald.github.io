@@ -95,6 +95,7 @@ $(document).ready(() => {
 
         // Checks if second card flipped matches first and trigger response
         } else {
+          allCards.css({"pointer-events": "none"});
           if (cardValue == $(e.target).children().attr("class")) {
             yesMatch()
           } else {
@@ -105,7 +106,10 @@ $(document).ready(() => {
           };
 
           // Removes markers, resets cardShowing value
-          setTimeout(() => { allCards.removeClass("marker") }, 700);
+          setTimeout(() => {
+            allCards.removeClass("marker");
+            allCards.css({"pointer-events": "auto"});
+          }, 700);
           cardShowing = false;
         };
        })
