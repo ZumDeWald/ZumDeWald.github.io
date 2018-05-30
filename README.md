@@ -32,3 +32,11 @@ _All consideration given to the Udacity style guides and project rubric_
   - [x] There is a star rating that decreases with larger number of attempts
   - [x] A "Congratulations" popup appears when all cards are matched
   - [x] Board and cards are styled and animate
+
+
+## Code Dependencies
+
+  This project makes use of:
+* The [jQuery Library](https://jquery.com/ "jQuery Homepage")
+* Icons from [FontAwesome](https://fontawesome.com/ "FontAwesome Homepage")
+* CSS Textures from [Transparent Textures](https://www.transparenttextures.com/ "Transparent Textures Homepage")
