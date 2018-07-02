@@ -1,0 +1,168 @@
+/* Oversizing catch-all */
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+/* Remove underline from links */
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BODY STYLING */
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-family: VT323, sans-serif, arial;
+  background-color: #a5d1bf;
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+}
+
+
+/* HEADER */
+
+.site-header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  background-color: #cc86a6;
+  background-image: url("https://www.transparenttextures.com/patterns/squares.png");
+  border-bottom: 2px solid #000;
+}
+
+.main-header {
+  font-size: 3.5em;
+  color: #fff;
+  margin: 5px;
+  filter: drop-shadow(0.3em 0.2em 15px #000);
+}
+
+.main-sub-header {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  color: #fff;
+  margin: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* MAIN */
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5em auto 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 50px;
+}
+
+.game-header {
+  align-self: flex-start;
+  font-size: 2.5em;
+  color: #fff;
+  padding-bottom: 8px;
+  border-bottom: 3px dashed #fff;
+}
+
+.game-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.game-title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #000;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: gray;
+}
+
+.game-title:hover {
+  cursor: pointer;
+}
+
+.game-area-show {
+  width: 100%;
+  height: 1200px;
+  background: gray;
+  transition: all 0.5s;
+}
+
+.game-area-hide {
+  visibility: hidden;
+  width: 100%;
+  height: 0;
+  transition: all 0.5s;
+}
+
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  background: linear-gradient(#75a08f, #a5d1bf);
+  padding: 15px 0 20px 0;
+}
+
+.footer-box {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.footer-box-heading {
+  width: 100%;
+  font-family: monospace;
+  font-size: 17px;
+}
+
+.footer-box-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  font-size: 15px;
+}
+
+.footer-list-item {
+  padding: 3px;
+}
