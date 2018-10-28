@@ -1,33 +1,35 @@
-# Toucans-Team-2
-Fresh Baked Games! | Voyage-5 | chingu.io
+# NeighborhoodMap
 
-*****
+### Purpose
+This is the final project for the Udactity Front End NanoDegree. No starter code was provided.
 
-# Fresh Baked Games!
-#### Games that make you smile like a warm cookie
+### Built Using:
+* React (via Create-React-App) <br />
+&nbsp; *Note: this project uses _no_ outside React libraries or wrappers
+* Google Maps API (javascript)
+* Foursquare API (to pull 'tips')
+* Responsive Design (CSS Grid, CSS Breakpoints)
 
-We all need a break from time to time. Life is busy, work is hard, and Pluto is no longer a planet...
 
-Give your worries a rest and put your creativity to the test!
+### Want to run this app yourself?
+To get this app running locally:
+* Download contents of repo to local destination
+* In your command line navigate to the 'neighborhood-map' folder
+* Type &nbsp; `npm start`
 
-## Games:
 
-  This site has games easy enough for young ones to play, but timeless enough to keep even the oldest kids coming back.
+### Features
+This app generates a Google Map instance and then populates it with pre-selected locations. <br /> <br />
+For this project I chose 5 of my favorite coffee shops around St. Louis.
+<br /> <br />
+You can filter each marker individually and click on the marker itself to see an InfoWindow containing: <br />
+* The location name
+* Address
+* A _Tip_ from Foursquare about the location
 
-- [x] <strong>Silly Stories</strong> || Give us a few words, and we'll give you a silly story!
-- [x] <strong>Memory Match Game</strong> || Can't remember your cat's birthday? Work on those memory skills!!!
-- [x] <strong>Pixel Art Maker</strong> || Try your hand at making something from scratch, right in your browser!
 
-*****
-
-### Credit / Dependencies
-
-* _Pixel Art Maker_ and _Memory Match Game_ were built as projects for Udacity's Front-End NanoDegree course. Though the ideas and specifications for the games came from Udacity, these were completely built from scratch.
-
-* _Silly Stories_ was built from scratch for this project.
-
-* Throughout the games we use:
-  * Icons from [Font Awesome](https://fontawesome.com/)
-  * CSS Textures from [Transparent Textures](https://www.transparenttextures.com/)
-  * [jQuery](http://api.jquery.com/)
-  * Inspiration from [Chuck Norris Memes](http://www.funnybeing.com/100-funny-selected-chuck-norris-memes/)
+### Credits / Dependencies
+* _Credit_ to Cuneyt for [This Article](http://cuneyt.aliustaoglu.biz/en/using-google-maps-in-react-without-custom-libraries/) as it helped me get started with Google Maps in React without an external library
+* [Google Fonts - _Forum_](https://fonts.google.com/specimen/Forum)
+* [Google Maps API](https://developers.google.com/maps/documentation/)
+* [Foursquare API](https://developer.foursquare.com/)
