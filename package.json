@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://ZumDeWald.github.io/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-async-script-loader": "^0.3.0",
     "react-dom": "^16.5.2",
