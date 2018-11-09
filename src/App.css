@@ -1,0 +1,361 @@
+/* General Style Applications  */
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif, arial;
+}
+
+
+/* Oversizing catch-all */
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+
+/* Remove decoration from links */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Theme Variables */
+
+:root {
+  --theme-color-p: #D2D2D2;
+  --theme-color-s: #7F7F7F;
+  --theme-color-h: #7F7F7F40;
+  --theme-elem-bg-trans: #ffffff80;
+  --theme-elem-bg-on-scroll: #fff;
+  --theme-box-shadow: 1px 2px 3px 1px var(--theme-color-s);
+  --theme-font-family: 'PT Sans', sans-serif;
+  --theme-trans-bg: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+
+/* Settings on React Root Element */
+
+#root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Setup Grid on top level div */
+
+#top-level-container {
+  display: grid;
+  grid-template-columns: [col-start] 100% [col-end];
+  grid-template-rows: [line-one] 80px [line-two] 500px [line-three] 1fr [line-four] 50px [line-five];
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Re-used styles */
+
+.main-font-style {
+  font-family: var(--theme-font-family);
+  color: var(--theme-color-p);
+}
+
+
+/* Header & Nav */
+
+#header-nav-container {
+  position: fixed;
+  grid-column: col-start / 2;
+  grid-row: line-one / line-two;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 5px var(--theme-color-s);
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  z-index: 3;
+  transition-duration: 900ms;
+}
+
+#nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: var(--theme-font-family);
+  font-size: 22px;
+  z-index: 3;
+}
+
+.nav-bar-on-load {
+  background-color: var(--theme-elem-bg-trans);
+  color: var(--theme-color-p);
+}
+
+.nav-bar-on-scroll {
+  background-color: var(--theme-elem-bg-on-scroll);
+  color: #000;
+}
+
+.nav-item {
+  padding: 20px 1em 0 1em;
+  height: 60px;
+  filter: drop-shadow(3px 2px 6px var(--theme-color-s));
+}
+
+.nav-item:hover {
+  color: var(--theme-elem-bg-on-scroll);
+}
+
+#header {
+  font-size: 25px;
+  letter-spacing: 6px;
+}
+
+
+/* Hero Image */
+
+#hero-container {
+  position: absolute;
+  grid-column: col-start / 2;
+  grid-row: line-one / line-three;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+#hero {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-image: url('./STP1.jpg');
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/* Main Content Area */
+
+#main-content-container {
+  grid-column: col-start / 2;
+  grid-row: line-three / line-four;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 1800px;
+  margin: 0;
+  background-color: #fff;
+  color: #fff;
+  z-index: 2;
+}
+
+.content-article{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+}
+
+.content-article:nth-of-type(odd) {
+  background-color: var(--theme-color-s);
+}
+
+.content-article:nth-of-type(even) {
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  color: var(--theme-color-s);
+}
+
+.article-align-right {
+  justify-content: flex-end;
+}
+
+.info-article-pic {
+  width: 300px;
+  padding-right: 40px;
+}
+
+.article-pic {
+  width: 400px;
+  padding-right: 40px;
+}
+
+.article-pic-right {
+  width: 400px;
+  padding: 0 0 0 40px;
+}
+
+.article-text-area {
+  max-width: 400px;
+}
+
+.article-heading {
+  font-size: 20px;
+}
+
+.article-text {
+  font-family: var(--theme-font-family);
+  font-size: 16px;
+}
+
+.display-article {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 700px;
+  background-image: var(--theme-trans-bg);
+}
+
+.display-heading {
+  width: 100%;
+  height: 18px;
+  padding-bottom: 8px;
+  margin-top: 1em;
+  background-color: var(--theme-color-s);
+  text-align: center;
+}
+
+.article-display-area {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.display-item {
+  margin-right: 20px;
+}
+
+.display-item:last-of-type {
+  margin: 0;
+}
+
+.display-pic {
+  width: 250px;
+  border: 1px solid var(--theme-color-s);
+  box-shadow: var(--theme-box-shadow);
+  transition-duration: 300ms;
+}
+
+.display-pic:hover {
+  box-shadow: none;
+}
+
+.gallery-button {
+  width: 150px;
+  height: 30px;
+  background-color: var(--theme-color-s);
+  font-size: 15px;
+}
+
+.gallery-button:hover {
+  color: #fff;
+  box-shadow: var(--theme-box-shadow);
+}
+
+
+/* Pricing Page Specific */
+
+#pricing-content-container {
+  grid-column: col-start / 2;
+  grid-row: line-three / line-four;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 2000px;
+  margin: 0;
+  background-color: #fff;
+  color: #fff;
+  z-index: 2;
+}
+
+.pricing-note {
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+}
+
+.pricing-disclaimer-note {
+  font-family: var(--theme-font-family);
+  max-width: 750px;
+  text-align: justify;
+}
+
+
+/* About Page Specific */
+
+.info-article {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  padding-top: 2em;
+  background-color: var(--theme-color-s);
+}
+
+.info-article-inner-container {
+  width: 600px;
+}
+
+.info-pic {
+  width: 300px;
+}
+
+.info-heading {
+  font-size: 25px;
+}
+
+
+/* FOOTER */
+
+#footer-container {
+  grid-column: col-start / 2;
+  grid-row: line-four / line-five;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--theme-elem-bg-trans);
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  z-index: 2;
+}
+
+#footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  margin:0;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.social-icon {
+  align-self: center;
+  margin-left: 0.4em;
+}
