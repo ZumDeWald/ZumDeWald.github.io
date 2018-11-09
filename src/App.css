@@ -33,7 +33,7 @@ a:active {
 :root {
   --theme-color-p: #D2D2D2;
   --theme-color-s: #7F7F7F;
-  --theme-color-h: #7F7F7F40;
+  --theme-color-h: #FF7201;
   --theme-elem-bg-trans: #ffffff80;
   --theme-elem-bg-on-scroll: #fff;
   --theme-box-shadow: 1px 2px 3px 1px var(--theme-color-s);
@@ -71,6 +71,13 @@ a:active {
   color: var(--theme-color-p);
 }
 
+.flex-c-nw {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Header & Nav */
 
@@ -89,7 +96,7 @@ a:active {
   box-shadow: 0 2px 5px var(--theme-color-s);
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   z-index: 3;
-  transition-duration: 900ms;
+  transition-duration: 800ms;
 }
 
 #nav-bar {
@@ -111,6 +118,10 @@ a:active {
 .nav-bar-on-scroll {
   background-color: var(--theme-elem-bg-on-scroll);
   color: #000;
+}
+
+.nav-item-selected {
+  border-bottom: 3px dashed var(--theme-color-h);
 }
 
 .nav-item {
@@ -169,7 +180,7 @@ a:active {
   flex-flow: row wrap;
   align-items: center;
   width: 100%;
-  height: 600px;
+  border-bottom: 1px solid var(--theme-color-h);
 }
 
 .content-article:nth-of-type(odd) {
@@ -182,23 +193,43 @@ a:active {
   color: var(--theme-color-s);
 }
 
+.main-article-size {
+  height: 600px;
+}
+
 .article-align-right {
   justify-content: flex-end;
 }
 
 .info-article-pic {
   width: 300px;
-  padding-right: 40px;
+  margin-right: 40px;
+  border-right: 4px solid var(--theme-color-h);
+  border-bottom: 2px solid var(--theme-color-h);
+}
+
+.info-article {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  padding-top: 2em;
+  background-color: var(--theme-color-s);
 }
 
 .article-pic {
   width: 400px;
-  padding-right: 40px;
+  margin-right: 40px;
+  border-right: 4px solid var(--theme-color-h);
+  border-bottom: 2px solid var(--theme-color-h);
 }
 
 .article-pic-right {
   width: 400px;
-  padding: 0 0 0 40px;
+  margin: 0 0 0 40px;
+  border-left: 4px solid var(--theme-color-h);
+  border-bottom: 2px solid var(--theme-color-h);
 }
 
 .article-text-area {
@@ -269,6 +300,48 @@ a:active {
 }
 
 
+/* About Page Specific */
+
+#about-content-container {
+  grid-column: col-start / 2;
+  grid-row: line-three / line-four;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #fff;
+  color: #fff;
+  z-index: 2;
+}
+
+.about-article-size {
+  height: 2000px;
+}
+
+.about-article-area {
+  max-width: 700px;
+}
+
+.about-article-heading {
+  font-size: 2em;
+}
+
+.about-list {
+  list-style: none;
+  line-height: 1.6em;
+}
+
+.about-list-item {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--theme-color-h);
+}
+
+.about-sub-heading {
+  text-decoration:underline solid var(--theme-color-p);
+}
+
+
 /* Pricing Page Specific */
 
 #pricing-content-container {
@@ -277,7 +350,7 @@ a:active {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  height: 2000px;
+  height: auto;
   margin: 0;
   background-color: #fff;
   color: #fff;
@@ -286,42 +359,22 @@ a:active {
 
 .pricing-note {
   width: 100%;
-  padding: 5px 0;
+  padding: 1em 0;
   margin: 0;
   background-color: #fff;
   text-align: center;
   color: #000;
+  border-bottom: 1px solid var(--theme-color-h);
+}
+
+.pricing-article-size {
+  height: 600px;
 }
 
 .pricing-disclaimer-note {
   font-family: var(--theme-font-family);
   max-width: 750px;
   text-align: justify;
-}
-
-
-/* About Page Specific */
-
-.info-article {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
-  height: 800px;
-  padding-top: 2em;
-  background-color: var(--theme-color-s);
-}
-
-.info-article-inner-container {
-  width: 600px;
-}
-
-.info-pic {
-  width: 300px;
-}
-
-.info-heading {
-  font-size: 25px;
 }
 
 

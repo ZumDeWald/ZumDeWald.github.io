@@ -8,7 +8,7 @@ class ContentArea extends Component {
     return (
       <main id="main-content-container">
 
-        <article className="content-article">
+        <article className="content-article main-article-size">
           <img src="./img/StacyPic.jpg" alt="Stacy Thompson" className="info-article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Hello, I'm Stacy!</h3>
@@ -20,7 +20,7 @@ class ContentArea extends Component {
           </div>
         </article>
 
-        <article className="content-article display-article">
+        <article className="content-article main-article-size display-article">
           <h3 className="display-heading main-font-style">Photography Styles</h3>
           <ul className="article-display-area">
             <li className="display-item">
@@ -45,7 +45,7 @@ class ContentArea extends Component {
           </Link>
         </article>
 
-        <article className="content-article article-align-right">
+        <article className="content-article main-article-size article-align-right">
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Hello, I'm Stacy!</h3>
             <p className="article-text">

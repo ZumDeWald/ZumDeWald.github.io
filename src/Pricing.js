@@ -10,7 +10,7 @@ class Pricing extends Component {
       <p className="pricing-note main-font-style">[[<em> * Prints larger than an 8x10 should be ordered through me * </em>]]</p>
 
       {/* Maternity Section */}
-        <article className="content-article">
+        <article className="content-article pricing-article-size">
           <img src="./img/STP5.jpg" alt="Maternity" className="article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Maternity Mini Session - $175</h3>
@@ -27,7 +27,7 @@ class Pricing extends Component {
         </article>
 
       {/* Newborn Section */}
-        <article className="content-article article-align-right">
+        <article className="content-article pricing-article-size article-align-right">
         <div className="article-text-area">
           <h3 className="article-heading main-font-style">Simply Newborn - $250</h3>
           <div className="article-text">
@@ -54,7 +54,7 @@ class Pricing extends Component {
         </article>
 
       {/* Children/Family Section */}
-        <article className="content-article">
+        <article className="content-article pricing-article-size">
           <img src="./img/STP2.jpg" alt="Children/Family" className="article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Mini / Milestone Session - $130</h3>
@@ -79,7 +79,7 @@ class Pricing extends Component {
         </article>
 
       {/* Disclaimers / Notes Section */}
-        <article className="content-article article-align-right">
+        <article className="content-article pricing-article-size article-align-right">
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Disclaimers / Notes</h3>
               <ul className="article-text">
@@ -93,7 +93,7 @@ class Pricing extends Component {
         </article>
 
         {/* Booking Disclaimer Section */}
-          <article className="content-article">
+          <article className="content-article pricing-article-size">
             <img src="./img/STP4.jpg" alt="Children/Family" className="article-pic" />
             <p className = "pricing-disclaimer-note">
               &nbsp; Stacy Thompson Photography is serving the Wabash Valley and surrounding counties. Book your session as early as possible.  To reserve your session, a 50% deposit of the session price is required (the deposit fee comes out of the session price). The remaining balance is due the day of the session using CASH or PAY-PAL. <br /> <br />
