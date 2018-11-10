@@ -38,7 +38,8 @@ a:active {
   --theme-elem-bg-on-scroll: #fff;
   --theme-box-shadow: 1px 2px 3px 1px var(--theme-color-s);
   --theme-font-family: 'PT Sans', sans-serif;
-  --theme-trans-bg: url("https://www.transparenttextures.com/patterns/arches.png");
+  --theme-font-family-b: 'Lato';
+  --theme-trans-bg: url("./img/arches.png");
 }
 
 
@@ -78,6 +79,10 @@ a:active {
   align-items: center;
 }
 
+.hide {
+  display: none;
+}
+
 
 /* Header & Nav */
 
@@ -94,7 +99,7 @@ a:active {
   margin: 0;
   padding: 0;
   box-shadow: 0 2px 5px var(--theme-color-s);
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  background-image: var(--theme-trans-bg);
   z-index: 3;
   transition-duration: 800ms;
 }
@@ -156,7 +161,7 @@ a:active {
   width: 100%;
   height: 100%;
   background-position: center center;
-  background-image: url('./STP1.jpg');
+  background-image: url('./img/STP1.jpg');
   transform: translate3d(0px, 0px, 0px);
 }
 
@@ -189,7 +194,7 @@ a:active {
 
 .content-article:nth-of-type(even) {
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  background-image: var(--theme-trans-bg);
   color: var(--theme-color-s);
 }
 
@@ -316,7 +321,7 @@ a:active {
 }
 
 .about-article-size {
-  height: 2000px;
+  width: 100%;
 }
 
 .about-article-area {
@@ -337,6 +342,10 @@ a:active {
   border-bottom: 1px solid var(--theme-color-h);
 }
 
+.about-list-item:last-of-type {
+  border-bottom: none;
+}
+
 .about-sub-heading {
   text-decoration:underline solid var(--theme-color-p);
 }
@@ -355,6 +364,60 @@ a:active {
   background-color: #fff;
   color: #fff;
   z-index: 2;
+}
+
+#pricing-referral-aside {
+  position: fixed;
+  left: 3em;
+  bottom: 3em;
+}
+
+#referral-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid var(--theme-color-h);
+  background-image: var(--theme-trans-bg);
+  background-color: var(--theme-elem-bg-trans);
+  font-family: var(--theme-font-family-b);
+  font-size: 1em;
+  text-align: justify;
+}
+
+#referral-button:hover {
+  cursor: pointer;
+}
+
+#referral-popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--theme-elem-bg-trans);
+  z-index: 5;
+}
+
+#referral-popup-modal {
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  border: 2px solid var(--theme-color-h);
+  border-radius: 5px;
+  background-color: var(--theme-color-s);
+}
+
+#referral-close {
+  align-self: flex-start;
+}
+
+#referral-close:hover {
+  cursor: pointer;
 }
 
 .pricing-note {

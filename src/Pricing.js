@@ -3,10 +3,48 @@ import React, { Component } from 'react';
 import './App.css';
 
 class Pricing extends Component {
+
+  //Modal open and close methods
+openReferralModal = () => {
+  let modal = document.getElementById("referral-popup-container");
+  modal.classList.remove("hide");
+  modal.classList.add("flex-c-nw");
+}
+
+closeReferralModal = () => {
+  let modal = document.getElementById("referral-popup-container");
+  modal.classList.remove("flex-c-nw");
+  modal.classList.add("hide");
+}
+
+
   render() {
     return (
       <section id="pricing-content-container">
 
+      {/* Referral button */}
+      <aside id="pricing-referral-aside">
+        <button id="referral-button"
+        onClick= {()=>{this.openReferralModal()}} >
+          Checkout my <br />
+          Referral Program!
+        </button>
+      </aside>
+
+      {/* Referral Popup Modal - Hidden by default */}
+      <div id="referral-popup-container" className="hide">
+        <div id="referral-popup-modal">
+          <i className="far fa-times-circle" id="referral-close"
+          onClick= {()=>{this.closeReferralModal()}} ></i>
+          <i className="far fa-handshake fa-4x referral-icon"></i>
+          <p className="article-text">
+            &nbsp; As a small business owner, word-of-mouth is one of my most important and beneficial forms of advertisement. Thank you so much for spreading the word about my business. It is because of customers like YOU that Stacy Thompson Photography is thriving! <br /> <br />
+            &nbsp; To express my gratitude for my customers, I am happy to announce that Stacy Thompson Photography has implemented a new Customer Referral Program! This offer is available to customers who have booked & completed a session. For every client you refer that books & completes a session, you will receive $10 off if they book & complete any full session, or $20 off if they book and complete a Delux Newborn Session.
+          </p>
+        </div>
+      </div>
+
+      {/* Main Content for Pricing Page */}
       <p className="pricing-note main-font-style">[[<em> * Prints larger than an 8x10 should be ordered through me * </em>]]</p>
 
       {/* Maternity Section */}
