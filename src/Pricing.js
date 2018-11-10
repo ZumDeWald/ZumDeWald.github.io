@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './App.css';
-
 class Pricing extends Component {
 
   //Modal open and close methods

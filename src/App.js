@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
+import Nav from './Nav.js'
 import HeroArea from './HeroArea.js';
 import ContentArea from './ContentArea.js';
 import MainGallery from './MainGallery.js';
@@ -11,10 +12,6 @@ import Pricing from './Pricing.js';
 import './App.css';
 
 class App extends Component {
-
-  state: {
-    pages: []
-  }
 
   scrollChanges = () => {
     let scrollAmount = ((document.body.scrollTop + document.documentElement.scrollTop));
@@ -30,13 +27,6 @@ class App extends Component {
     }
   }
 
-  //Current Page Indicator change function
-  currentPageSwitcher = (sel) => {
-    let element = document.getElementsByClassName("nav-item-selected");
-    element[0].classList.remove("nav-item-selected");
-    sel.target.classList.add("nav-item-selected")
-  }
-
 
   componentDidMount () {
     //Set scroll event on Hero
@@ -47,41 +37,18 @@ class App extends Component {
   render() {
     return (
       <div id="top-level-container">
-        <header id="header-nav-container" className="nav-bar-on-load">
-          <nav id="nav-bar">
-            <h3 id="nav-home" className="nav-item"><Link to="/"
-            onClick={(sel)=>{this.currentPageSwitcher(sel)}}
-            className="nav-item-selected"
-            >Home</Link></h3>
-            <h3 id="nav-gallery" className="nav-item"><Link to="/gallery"
-            onClick={(sel)=>{this.currentPageSwitcher(sel)}}
-            >Galleries</Link></h3>
-            <h3 id="nav-about" className="nav-item"><Link to="/about"
-            onClick={(sel)=>{this.currentPageSwitcher(sel)}}
-            >About</Link></h3>
-            <h3 id="nav-pricing" className="nav-item"><Link to="/pricing"
-            onClick={(sel)=>{this.currentPageSwitcher(sel)}}
-            >Pricing</Link></h3>
-          </nav>
-        </header>
+
+        <Nav />
 
         <HeroArea />
 
-        <Route exact path='/' render={() => (
-          <ContentArea  />
-        )} />
+        <Route exact path='/' component={ContentArea} />
 
-        <Route exact path="/gallery" render={() => (
-          <MainGallery />
-        )} />
+        <Route exact path="/gallery" component={MainGallery} />
 
-        <Route exact path="/about" render={() => (
-          <About />
-        )} />
+        <Route exact path="/about" component={About} />
 
-        <Route exact path="/pricing" render={() => (
-          <Pricing />
-        )} />
+        <Route exact path="/pricing" component={Pricing} />
 
         <footer id="footer-container">
           <section id="footer">
