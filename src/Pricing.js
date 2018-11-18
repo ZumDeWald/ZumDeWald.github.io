@@ -24,8 +24,7 @@ closeReferralModal = () => {
       <aside id="pricing-referral-aside">
         <button id="referral-button"
         onClick= {()=>{this.openReferralModal()}} >
-          Checkout my <br />
-          Referral Program!
+          Checkout my Referral Program!
         </button>
       </aside>
 
@@ -34,19 +33,25 @@ closeReferralModal = () => {
         <div id="referral-popup-modal">
           <i className="far fa-times-circle" id="referral-close"
           onClick= {()=>{this.closeReferralModal()}} ></i>
-          <i className="far fa-handshake fa-4x referral-icon"></i>
-          <p className="article-text">
-            &nbsp; As a small business owner, word-of-mouth is one of my most important and beneficial forms of advertisement. Thank you so much for spreading the word about my business. It is because of customers like YOU that Stacy Thompson Photography is thriving! <br /> <br />
-            &nbsp; To express my gratitude for my customers, I am happy to announce that Stacy Thompson Photography has implemented a new Customer Referral Program! This offer is available to customers who have booked & completed a session. For every client you refer that books & completes a session, you will receive $10 off if they book & complete any full session, or $20 off if they book and complete a Delux Newborn Session.
-          </p>
+          <i className="far fa-handshake fa-4x"></i>
+          <p className="about-article-text">
+           As a small business owner, word-of-mouth is one of my most beneficial forms of advertisement. Thank you so much for spreading the word about my business, it is because of customers like <em>YOU</em> that Stacy Thompson Photography is thriving! </p>
+          <p className="about-article-text">
+            I am happy to announce customers who have booked & completed a session with me will recieve the following credits when they refer a new customer: </p>
+              <ul>
+                <li>$10 (Referral Books Full Session)*</li>
+                <li>$20 (Referral Books Deluxe Newborn)*</li>
+              </ul>
+          <p className="popup-modal-note">
+           <em>*Referred customer must <strong>book & complete</strong> session for credit to apply. Credit applied to any future sessions booked.</em> </p>
         </div>
       </div>
 
       {/* Main Content for Pricing Page */}
-      <p className="pricing-note main-font-style">[[<em> * Prints larger than an 8x10 should be ordered through me * </em>]]</p>
+      <p className="pricing-note main-font-style">[[<em> Prints larger than an 8x10 should be ordered through me </em>]]</p>
 
       {/* Maternity Section */}
-        <article className="content-article pricing-article-size">
+        <article className="content-article">
           <img src="./img/STP5.jpg" alt="Maternity" className="article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Maternity Mini Session - $175</h3>
@@ -55,7 +60,7 @@ closeReferralModal = () => {
               <ul>
                 <li>30 minute session</li>
                 <li>2 outfits</li>
-                <li>7 edited images available for download from the online gallery.</li>
+                <li>7 edited images available for download from your online gallery.</li>
                 <li>an online gallery for viewing images and ordering prints</li>
               </ul>
             </div>
@@ -63,41 +68,41 @@ closeReferralModal = () => {
         </article>
 
       {/* Newborn Section */}
-        <article className="content-article pricing-article-size article-align-right">
-        <div className="article-text-area">
-          <h3 className="article-heading main-font-style">Simply Newborn - $250</h3>
-          <div className="article-text">
-            <strong>Includes:</strong>
-            <ul>
-              <li>baby only session</li>
-              <li>10 edited images available for download from the online gallery.</li>
-              <li>an online gallery for viewing images and ordering prints</li>
-            </ul>
+        <article className="content-article article-align-right">
+          <div className="article-text-area">
+            <h3 className="article-heading main-font-style">Simply Newborn - $250</h3>
+            <div className="article-text">
+              <strong>Includes:</strong>
+              <ul>
+                <li>baby only session</li>
+                <li>10 edited images available for download from your online gallery.</li>
+                <li>an online gallery for viewing images and ordering prints</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="article-text-area">
-          <h3 className="article-heading main-font-style">Deluxe Newborn/Family - $375</h3>
-          <div className="article-text">
-            <strong>Includes:</strong>
-            <ul>
-              <li>baby and family session</li>
-              <li>up to 20 edited images available for download from the online gallery.</li>
-              <li>an online gallery for viewing images and ordering prints</li>
-            </ul>
+          <div className="article-text-area">
+            <h3 className="article-heading main-font-style">Deluxe Newborn/Family - $375</h3>
+            <div className="article-text">
+              <strong>Includes:</strong>
+              <ul>
+                <li>baby and family session</li>
+                <li>up to 20 edited images available for download from your online gallery.</li>
+                <li>an online gallery for viewing images and ordering prints</li>
+              </ul>
+            </div>
           </div>
-        </div>
           <img src="./img/STP7.jpg" alt="Newborn" className="article-pic-right" />
         </article>
 
       {/* Children/Family Section */}
-        <article className="content-article pricing-article-size">
+        <article className="content-article">
           <img src="./img/STP2.jpg" alt="Children/Family" className="article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Mini / Milestone Session - $130</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
-                <li>7 edited images available for download from the online gallery.</li>
+                <li>7 edited images available for download from your online gallery.</li>
                 <li>an online gallery for viewing images and ordering prints</li>
               </ul>
             </div>
@@ -107,7 +112,7 @@ closeReferralModal = () => {
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
-                <li>15 edited images available for download from the online gallery.</li>
+                <li>15 edited images available for download from your online gallery.</li>
                 <li>an online gallery for viewing images and ordering prints</li>
               </ul>
             </div>
@@ -115,7 +120,7 @@ closeReferralModal = () => {
         </article>
 
       {/* Disclaimers / Notes Section */}
-        <article className="content-article pricing-article-size article-align-right">
+        <article className="content-article article-align-right">
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Disclaimers / Notes</h3>
               <ul className="article-text">
@@ -129,13 +134,17 @@ closeReferralModal = () => {
         </article>
 
         {/* Booking Disclaimer Section */}
-          <article className="content-article pricing-article-size">
+          <article className="content-article">
             <img src="./img/STP4.jpg" alt="Children/Family" className="article-pic" />
-            <p className = "pricing-disclaimer-note">
-              &nbsp; Stacy Thompson Photography is serving the Wabash Valley and surrounding counties. Book your session as early as possible.  To reserve your session, a 50% deposit of the session price is required (the deposit fee comes out of the session price). The remaining balance is due the day of the session using CASH or PAY-PAL. <br /> <br />
-              &nbsp; <em>All payments are non-refundable.</em> You secure pricing and services when you book your session. Pricing is non-negotiable.  All prices are subject to change at any time, without notice. If they change, I will honor the prices at the time of your booking. <br /> <br />
-              &nbsp; Stacy Thompson Photography is available to travel nationwide and worldwide. A travel fee applies on distances greater than 25 miles.
-            </p>
+            <div>
+              <p className="pricing-disclaimer-note">
+               Stacy Thompson Photography is serving the Wabash Valley and surrounding counties. Book your session as early as possible.  To reserve your session, a 50% deposit of the session price is required (the deposit fee comes out of the session price). The remaining balance is due the day of the session using CASH or PAY-PAL. </p>
+               <p className="pricing-disclaimer-note">
+               <em>All payments are non-refundable.</em> You secure pricing and services when you book your session. Pricing is non-negotiable.  All prices are subject to change at any time, without notice. If they change, I will honor the prices at the time of your booking. </p>
+               <p className="pricing-disclaimer-note">
+               Stacy Thompson Photography is available to travel nationwide and worldwide. A travel fee applies on distances greater than 25 miles.
+              </p>
+            </div>
           </article>
 
       </section>
