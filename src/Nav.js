@@ -32,33 +32,4 @@ function LinkSetup({ label, to, activeOnlyWhenExact }) {
   );
 }
 
-
-//   render() {
-//     return (
-//       <Menu />
-//
-// /*
-//       // <Router>
-//       //   <nav id="nav-bar">
-//       //     <h3 id="nav-home" className="nav-item"><Link to="/"
-//       //     onClick={(sel)=>{this.currentPageSwitcher(sel)}}
-//       //     className="nav-item-selected"
-//       //     >Home</Link></h3>
-//       //     <h3 id="nav-gallery" className="nav-item"><Link to="/gallery"
-//       //     onClick={(sel)=>{this.currentPageSwitcher(sel)}}
-//       //     >Galleries</Link></h3>
-//       //     <h3 id="nav-about" className="nav-item"><Link to="/about"
-//       //     onClick={(sel)=>{this.currentPageSwitcher(sel)}}
-//       //     >About</Link></h3>
-//       //     <h3 id="nav-pricing" className="nav-item"><Link to="/pricing"
-//       //     onClick={(sel)=>{this.currentPageSwitcher(sel)}}>Pricing</Link></h3>
-//       //   </nav>
-//       // </Router>
-// */
-//
-//
-//     );
-//   }
-// }
-
 export default Nav;

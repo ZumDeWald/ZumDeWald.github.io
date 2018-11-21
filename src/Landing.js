@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 
-class ContentArea extends Component {
+class Landing extends Component {
   render() {
     return (
       <main id="main-content-container">
@@ -22,27 +22,23 @@ class ContentArea extends Component {
         </article>
 
         <article className="display-article">
-          <h3 className="display-heading main-font-style">Photography Styles</h3>
-
-          <Link to="/gallery">
-            <button className="gallery-button main-font-style">- Visit My Gallery -</button>
-          </Link>
 
           <ul className="article-display-area">
-            <li className="display-item">
-              <img src="./img/STP5.jpg" alt="Maternity" className="display-pic" />
+            <li id="gb">
+              <Link to="/gallery">
+                <button id="gallery-button">- Galleries -</button>
+              </Link>
+            </li>
+            <li id="d1" className="display-item">
               <p className="display-item-text">
               Maternity </p> </li>
-            <li className="display-item">
-              <img src="./img/STP7.jpg" alt="Newborn" className="display-pic" />
+            <li id="d2" className="display-item">
               <p className="display-item-text">
               Newborn </p> </li>
-            <li className="display-item">
-              <img src="./img/STP2.jpg" alt="Children/Fam" className="display-pic" />
+            <li id="d3" className="display-item">
               <p className="display-item-text">
               Children/Family </p> </li>
-              <li className="display-item">
-              <img src="./img/STP6.jpg" alt="Lifestyle" className="display-pic" />
+            <li id="d4" className="display-item">
               <p className="display-item-text">
               Lifestyle </p> </li>
           </ul>
@@ -54,4 +50,4 @@ class ContentArea extends Component {
   }
 }
 
-export default ContentArea;
+export default Landing;

@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 
 import Nav from './Nav.js'
 import HeroArea from './HeroArea.js';
-import ContentArea from './ContentArea.js';
+import Landing from './Landing.js';
 import MainGallery from './MainGallery.js';
 import About from './About.js';
 import Pricing from './Pricing.js';
@@ -18,7 +18,7 @@ class App extends Component {
     const navBar = document.getElementById("header-nav-container");
 
     //Opacity change for Nav Menu
-    if (scrollAmount > 50) {
+    if (scrollAmount > 500) {
       navBar.classList.add("nav-bar-on-scroll");
       navBar.classList.remove("nav-bar-on-load");
     } else {
@@ -42,7 +42,7 @@ class App extends Component {
 
         <HeroArea />
 
-        <Route exact path='/' component={ContentArea} />
+        <Route exact path='/' component={Landing} />
 
         <Route exact path="/gallery" component={MainGallery} />
 
