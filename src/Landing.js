@@ -7,7 +7,7 @@ class Landing extends Component {
     return (
       <main id="main-content-container">
 
-        <article className="content-article">
+        <article className="info-article">
           <img src="./img/StacyPic.jpg" alt="Stacy Thompson" className="info-article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Hello, I'm Stacy!</h3>
