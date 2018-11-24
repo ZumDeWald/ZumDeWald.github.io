@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 class HeroArea extends Component {
-
-
+  
   render() {
     return (
       <section id="hero-container">

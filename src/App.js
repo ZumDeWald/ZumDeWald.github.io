@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Nav from './Nav.js'
 import HeroArea from './HeroArea.js';
@@ -7,7 +7,6 @@ import Landing from './Landing.js';
 import MainGallery from './MainGallery.js';
 import About from './About.js';
 import Pricing from './Pricing.js';
-
 
 import './App.css';
 
@@ -42,22 +41,24 @@ class App extends Component {
 
         <HeroArea />
 
-        <Route exact path='/' component={Landing} />
+        <Switch>
+          <Route exact path="/" component={Landing} />
 
-        <Route exact path="/gallery" component={MainGallery} />
+          <Route path="/gallery" component={MainGallery} />
 
-        <Route exact path="/about" component={About} />
+          <Route path="/about" component={About} />
 
-        <Route exact path="/pricing" component={Pricing} />
+          <Route path="/pricing" component={Pricing} />
+        </Switch>
 
         <footer id="footer-container">
           <section id="footer">
-            <p className="main-font-style footer-text">&copy; 2018 STPhotography |&nbsp;
+            <p className="footer-text">&copy; 2018 STPhotography |&nbsp;
             </p>
             <a href="https://www.facebook.com/stacythompsonphotography" target="_blank" rel="noopener noreferrer">
-            <i id="fb-icon" className="fab fa-facebook fa-lg social-icon"></i> </a>
+              <i id="fb-icon" className="fab fa-facebook fa-lg social-icon"></i> </a>
             <a href="https://www.pinterest.com/stacythompsonph/" target="_blank" rel="noopener noreferrer">
-            <i id="pin-icon" className="fab fa-pinterest fa-lg social-icon"></i> </a>
+              <i id="pin-icon" className="fab fa-pinterest fa-lg social-icon"></i> </a>
           </section>
         </footer>
       </div>

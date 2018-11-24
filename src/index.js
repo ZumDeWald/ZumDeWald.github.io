@@ -14,7 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
     <ScrollToTop>
       <App />
-      </ScrollToTop>
+    </ScrollToTop>
   </BrowserRouter>,
   document.getElementById('root'));
 
