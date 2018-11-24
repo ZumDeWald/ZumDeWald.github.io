@@ -19,10 +19,10 @@ function ViewerChoice({ label, to }) {
     <Route
       path={to}
       children={({ match }) => (
-        <button
-        className="gallery-chooser-button"><Link to={to}
+        <Link to={to}
         id={match ? "gallery-button-current" : ""}
-        >{label}</Link></button>
+        ><button
+        className="gallery-chooser-button">{label}</button></Link>
       )}
     />
   );

@@ -48,13 +48,13 @@ closeReferralModal = () => {
       </div>
 
       {/* Main Content for Pricing Page */}
-      <p className="pricing-note main-font-style">[[<em> Prints larger than an 8x10 should be ordered through me </em>]]</p>
+      <p className="pricing-note">[[<em> Prints larger than an 8x10 should be ordered through me </em>]]</p>
 
       {/* Maternity Section */}
         <article className="content-article">
           <img src="./img/STP5.jpg" alt="Maternity" className="article-pic" />
           <div className="article-text-area">
-            <h3 className="article-heading main-font-style">Maternity Mini Session - $175</h3>
+            <h3 className="article-heading">Maternity Mini Session - $175</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -70,7 +70,7 @@ closeReferralModal = () => {
       {/* Newborn Section */}
         <article className="content-article article-align-right">
           <div className="article-text-area">
-            <h3 className="article-heading main-font-style">Simply Newborn - $250</h3>
+            <h3 className="article-heading article-heading-l">Simply Newborn - $250</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -81,7 +81,7 @@ closeReferralModal = () => {
             </div>
           </div>
           <div className="article-text-area">
-            <h3 className="article-heading main-font-style">Deluxe Newborn/Family - $375</h3>
+            <h3 className="article-heading article-heading-l">Deluxe Newborn/Family - $375</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -98,7 +98,7 @@ closeReferralModal = () => {
         <article className="content-article">
           <img src="./img/STP2.jpg" alt="Children/Family" className="article-pic" />
           <div className="article-text-area">
-            <h3 className="article-heading main-font-style">Mini / Milestone Session - $130</h3>
+            <h3 className="article-heading">Mini / Milestone Session - $130</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -108,7 +108,7 @@ closeReferralModal = () => {
             </div>
           </div>
           <div className="article-text-area">
-            <h3 className="article-heading main-font-style">One Year Session - $200</h3>
+            <h3 className="article-heading">One Year Session - $200</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -122,7 +122,7 @@ closeReferralModal = () => {
       {/* Disclaimers / Notes Section */}
         <article className="content-article article-align-right">
           <div className="article-text-area">
-            <h3 className="article-heading main-font-style">Disclaimers / Notes</h3>
+            <h3 className="article-heading article-heading-l">Disclaimers / Notes</h3>
               <ul className="article-text">
                 <li>Sessions are <em>only</em> done on week days. If you need to schedule a weekend session there will be an additional $50 fee.</li>
                 <li>Sessions <strong>Do Not</strong> include images on CD. Instead they are available for download from your online gallery. [see next item]</li>

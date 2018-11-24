@@ -26,7 +26,7 @@ class Landing extends Component {
           <ul className="article-display-area">
             <li id="gb">
               <Link to="/gallery">
-                <button id="gallery-button">- Galleries -</button>
+                <button id="gallery-button">- Gallery -</button>
               </Link>
             </li>
             <li id="d1" className="display-item">
