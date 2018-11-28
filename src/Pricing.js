@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import ScrollToTopOnMount from './ScrollToTopOnMount.js';
+
 class Pricing extends Component {
 
   //Modal open and close methods
@@ -19,6 +21,7 @@ closeReferralModal = () => {
   render() {
     return (
       <section id="pricing-content-container">
+      <ScrollToTopOnMount />
 
       {/* Referral button */}
       <aside id="pricing-referral-aside">
@@ -51,7 +54,7 @@ closeReferralModal = () => {
       <p className="pricing-note">[[<em> Prints larger than an 8x10 should be ordered through me </em>]]</p>
 
       {/* Maternity Section */}
-        <article className="content-article">
+        <article className="content-article dark-bg">
           <img src="./img/STP5.jpg" alt="Maternity" className="article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading">Maternity Mini Session - $175</h3>
@@ -95,7 +98,7 @@ closeReferralModal = () => {
         </article>
 
       {/* Children/Family Section */}
-        <article className="content-article">
+        <article className="content-article dark-bg">
           <img src="./img/STP2.jpg" alt="Children/Family" className="article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading">Mini / Milestone Session - $130</h3>
@@ -134,7 +137,7 @@ closeReferralModal = () => {
         </article>
 
         {/* Booking Disclaimer Section */}
-          <article className="content-article">
+          <article className="content-article dark-bg">
             <img src="./img/STP4.jpg" alt="Children/Family" className="article-pic" />
             <div>
               <p className="pricing-disclaimer-note">

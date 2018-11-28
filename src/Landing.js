@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import ScrollToTopOnMount from './ScrollToTopOnMount.js';
+
 
 class Landing extends Component {
   render() {
     return (
       <main id="main-content-container">
+      <ScrollToTopOnMount />
 
-        <article className="info-article">
+        <article className="info-article dark-bg">
           <img src="./img/StacyPic.jpg" alt="Stacy Thompson" className="info-article-pic" />
           <div className="article-text-area">
             <h3 className="article-heading main-font-style">Hello, I'm Stacy!</h3>

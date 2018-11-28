@@ -3,6 +3,16 @@ import React, { Component } from 'react';
 
 class Viewer extends Component {
 
+  componentDidMount() {
+    const lengthOfPics = this.props.pics.length;
+    this.props.onSetTrayWidth(lengthOfPics);
+  }
+
+  componentDidUpdate() {
+    const lengthOfPics = this.props.pics.length;
+    this.props.onSetTrayWidth(lengthOfPics);
+  }
+
   render() {
     return (
     <article className="gallery-viewer-area">

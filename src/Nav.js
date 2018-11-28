@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Link } from "react-router-dom";
 
 
-
 function Nav() {
   return (
     <header id="header-nav-container" className="nav-bar-on-load">
