@@ -42,7 +42,7 @@ class About extends Component {
           <p className="about-box-text">
           I will also send you a questionnaire so I can better prepare for your little ones uniquely styled session. </p>
           <p className="about-box-text">
-          Plan on the session length being atleast 2 hours. </p>
+          Plan on the session length being at least 2 hours. </p>
 
           <span
             onClick={this.toggleAboutBox}

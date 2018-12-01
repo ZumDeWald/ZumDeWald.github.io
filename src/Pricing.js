@@ -51,13 +51,15 @@ closeReferralModal = () => {
       </div>
 
       {/* Main Content for Pricing Page */}
-      <p className="pricing-note">[[<em> Prints larger than an 8x10 should be ordered through me </em>]]</p>
+      <p className="pricing-note">
+        <i className="fas fa-asterisk fa-sm"></i>
+        <em> Prints larger than an 8x10 should be ordered through me </em></p>
 
       {/* Maternity Section */}
-        <article className="content-article dark-bg">
+        <article className="content-article top-spacer dark-bg">
           <img src="./img/STP5.jpg" alt="Maternity" className="article-pic" />
           <div className="article-text-area">
-            <h3 className="article-heading">Maternity Mini Session - $175</h3>
+            <h3 className="article-heading">Maternity Session - $175</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -71,7 +73,7 @@ closeReferralModal = () => {
         </article>
 
       {/* Newborn Section */}
-        <article className="content-article article-align-right">
+        <article className="content-article">
           <div className="article-text-area">
             <h3 className="article-heading article-heading-l">Simply Newborn - $250</h3>
             <div className="article-text">
@@ -84,7 +86,7 @@ closeReferralModal = () => {
             </div>
           </div>
           <div className="article-text-area">
-            <h3 className="article-heading article-heading-l">Deluxe Newborn/Family - $375</h3>
+            <h3 className="article-heading article-heading-l">Deluxe Newborn/ <br />Family - $375</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -101,7 +103,7 @@ closeReferralModal = () => {
         <article className="content-article dark-bg">
           <img src="./img/STP2.jpg" alt="Children/Family" className="article-pic" />
           <div className="article-text-area">
-            <h3 className="article-heading">Mini / Milestone Session - $130</h3>
+            <h3 className="article-heading">Milestone Session - $130</h3>
             <div className="article-text">
               <strong>Includes:</strong>
               <ul>
@@ -123,7 +125,7 @@ closeReferralModal = () => {
         </article>
 
       {/* Disclaimers / Notes Section */}
-        <article className="content-article article-align-right">
+        <article className="content-article">
           <div className="article-text-area">
             <h3 className="article-heading article-heading-l">Disclaimers / Notes</h3>
               <ul className="article-text">
