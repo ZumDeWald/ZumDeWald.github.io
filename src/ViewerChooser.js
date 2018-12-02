@@ -21,7 +21,7 @@ function ViewerChoice({ label, to }) {
       children={({ match }) => (
         <Link to={to}
         id={match ? "gallery-button-current" : ""}
-        ><button
+        ><button tabIndex="-1"
         className="gallery-chooser-button">{label}</button></Link>
       )}
     />
