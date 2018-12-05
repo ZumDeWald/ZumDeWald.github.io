@@ -33,7 +33,7 @@ a:active {
 :root {
   --theme-color-p: #6d6d6d;
   --theme-color-s: #424242;
-  --theme-color-h: #ff9800;
+  --theme-color-h: #90caf9;
   --theme-elem-bg-trans: #ffffff80;
   --theme-elem-bg-on-scroll: #fff;
   --theme-box-shadow: 2px 3px 10px 1px var(--theme-color-s);
@@ -235,8 +235,6 @@ p {
 .info-article-pic {
   width: 180px;
   margin-top: 1em;
-  border-right: 4px solid var(--theme-color-h);
-  border-bottom: 2px solid var(--theme-color-h);
 }
 
 .info-article {
@@ -543,6 +541,7 @@ p {
   align-items: flex-start;
   width: 100%;
   padding: 1em;
+  margin: 2em 0;
   background-color: #fff;
   background-image: var(--theme-trans-bg);
   border: 2px inset var(--theme-color-s);
@@ -551,14 +550,15 @@ p {
               0 0 5px 12px var(--theme-color-s);
   color: var(--theme-color-s);
   overflow: hidden;
+  transition-duration: 300ms;
 }
 
 .box-closed {
-  height: 125px;
+  height: 50px;
 }
 
 .box-open {
-  height: auto;
+  height: 900px;
 }
 
 .about-box-expand {
@@ -590,11 +590,12 @@ p {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin: 1.5em;
+  margin: 1.5em 2em;
 }
 
 .about-box-heading {
   margin: 1em;
+  padding: 0;
   font-size: 1.6em;
   font-family: var(--theme-font-p);
   color: #000;
@@ -602,8 +603,8 @@ p {
 
 .about-box-text {
   padding: 0 1em;
-  margin-left: 4.3em;
-  text-align: left;
+  margin: 0.5em 0.5em auto 2.5em;
+  text-align: justify;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -1155,6 +1156,14 @@ p {
 
 .gallery-tray-pic {
   max-width: 200px;
+}
+
+.about-box-text {
+  font-size: 1.3em;
+}
+
+.box-open {
+  height: 1200px;
 }
 
 
