@@ -61,7 +61,6 @@ closeReferralModal = () => {
           <div className="article-text-area">
             <h3 className="article-heading">Maternity Session - $175</h3>
             <div className="article-text">
-              <strong>Includes:</strong>
               <ul>
                 <li>30 minute session</li>
                 <li>2 outfits</li>
@@ -77,7 +76,6 @@ closeReferralModal = () => {
           <div className="article-text-area">
             <h3 className="article-heading article-heading-l">Simply Newborn - $250</h3>
             <div className="article-text">
-              <strong>Includes:</strong>
               <ul>
                 <li>baby only session</li>
                 <li>10 edited images available for download from your online gallery.</li>
@@ -88,7 +86,6 @@ closeReferralModal = () => {
           <div className="article-text-area">
             <h3 className="article-heading article-heading-l">Deluxe Newborn/ <br />Family - $375</h3>
             <div className="article-text">
-              <strong>Includes:</strong>
               <ul>
                 <li>baby and family session</li>
                 <li>up to 20 edited images available for download from your online gallery.</li>
@@ -105,7 +102,6 @@ closeReferralModal = () => {
           <div className="article-text-area">
             <h3 className="article-heading">Milestone Session - $130</h3>
             <div className="article-text">
-              <strong>Includes:</strong>
               <ul>
                 <li>7 edited images available for download from your online gallery.</li>
                 <li>an online gallery for viewing images and ordering prints</li>
@@ -115,7 +111,6 @@ closeReferralModal = () => {
           <div className="article-text-area">
             <h3 className="article-heading">One Year Session - $200</h3>
             <div className="article-text">
-              <strong>Includes:</strong>
               <ul>
                 <li>15 edited images available for download from your online gallery.</li>
                 <li>an online gallery for viewing images and ordering prints</li>
