@@ -514,7 +514,7 @@ p {
 }
 
 
-/* About Page Specific */
+/* About */
 
 #about-content-container {
   grid-column: col-start / 2;
@@ -533,13 +533,16 @@ p {
   width: 100%;
   max-width: 900px;
   padding: 0;
-  margin: auto;
+  margin: 2em auto;
   background-color: #fff;
   background-image: var(--theme-trans-bg);
   color: var(--theme-color-s);
 }
 
 .about-faq {
+  width: 80%;
+  margin: 0.8em auto;
+  border-bottom: 2px solid var(--theme-color-h);
   font-family: var(--theme-font-s);
   font-size: 2em;
   text-align: center;
@@ -552,8 +555,8 @@ p {
   align-items: flex-start;
   width: 100%;
   height: auto;
-  padding-bottom: 1.2em;
-  margin-bottom: 2em;
+  padding-bottom: 0.6em;
+  margin: 0;
   overflow: hidden;
   transition-duration: 300ms;
   z-index: 2;
@@ -612,7 +615,7 @@ p {
 }
 
 .about-box-text {
-  padding: 0.3em;
+  padding: 0.5em;
   margin: 0.2em;
   text-align: justify;
   font-size: 1em;
@@ -631,18 +634,14 @@ p {
 }
 
 .about-list {
-  margin: 0 1.3em 0 -1.6em;
+  margin: 0.5em 0 1em -1.5em;
+  font-size: 1.1em;
   list-style: none;
-  line-height: 1.7em;
+  line-height: 1.8em;
 }
 
 .about-list-item {
-  padding: 0.3em 0;
-  border-bottom: 1px solid var(--theme-color-h);
-}
-
-.about-list-item:last-of-type {
-  border-bottom: none;
+  margin-bottom: 0.6em;
 }
 
 .about-sub-heading {
@@ -873,26 +872,32 @@ p {
 /* About */
 
 .about-article-area {
-  width: 70%;
+  width: 75%;
   max-width: 900px;
-  border: 2px inset var(--theme-color-s);
-  box-shadow: 0 0 0 8px #fff,
-              0 0 5px 12px var(--theme-color-s);
+  padding: 0;
   color: var(--theme-color-s);
+  box-shadow: 2px 5px 20px #000;
 }
 
-.about-article-text {
+.about-article-box {
+  padding: 1em 0 ;
+}
+
+.about-box-heading {
+  margin-left: 0.5em;
   font-size: 1.2em;
-  margin-right: 1em;
 }
 
 .about-box-text {
-  padding: 0 1em;
-  margin: 0.5em 0.5em auto 2.5em;
+  padding: 0;
+  margin: 1em;
 }
 
 .far {
   display: block;
+  padding: 0 0.2em 0 0;
+  margin: 0;
+  border-right: 2px solid #000;
 }
 
 
@@ -952,17 +957,6 @@ p {
 
 .gallery-viewer-tray {
   width: 595px;
-}
-
-/* About */
-
-.about-faq {
-  font-size: 2.2em;
-}
-
-.about-box-heading {
-  margin: 1em;
-  font-size: 1.1em;
 }
 
 
@@ -1096,12 +1090,20 @@ p {
 
 /* About */
 
+.box-closed {
+  height: 80px;
+}
+
+.about-article-area {
+  width: 80%;
+}
+
 .about-faq {
   font-size: 3em;
 }
 
 .about-box-heading {
-  margin: 1em;
+  margin-left: 1em;
   padding: 0;
   font-size: 1.6em;
 }
