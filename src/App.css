@@ -539,7 +539,7 @@ p {
   color: var(--theme-color-s);
 }
 
-.about-faq {
+.about-header {
   width: 80%;
   margin: 0.8em auto;
   border-bottom: 2px solid var(--theme-color-h);
@@ -1098,7 +1098,7 @@ p {
   width: 80%;
 }
 
-.about-faq {
+.about-header {
   font-size: 3em;
 }
 
