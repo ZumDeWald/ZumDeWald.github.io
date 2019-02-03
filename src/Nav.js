@@ -8,7 +8,7 @@ function Nav() {
       <nav id="nav-bar">
         <LinkSetup activeOnlyWhenExact={true} to="/" label="Home" />
         <LinkSetup  to="/gallery" label="Galleries" />
-        <LinkSetup  to="/about/FAQ" label="About" />
+        <LinkSetup  to="/about" label="About" />
         <LinkSetup  to="/pricing" label="Pricing" />
       </nav>
     </header>

@@ -8,7 +8,14 @@ import MainGallery from './MainGallery.js';
 import About from './About.js';
 import Pricing from './Pricing.js';
 
-import './App.css';
+import './stylesheets/App.css';
+import './stylesheets/Nav.css';
+import './stylesheets/Hero.css';
+import './stylesheets/Landing.css';
+import './stylesheets/Gallery.css';
+import './stylesheets/About.css';
+import './stylesheets/Pricing.css';
+import './stylesheets/Footer.css';
 
 class App extends Component {
 

@@ -1,0 +1,198 @@
+/* General Style Applications  */
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif, arial;
+}
+
+
+/* Oversizing catch-all */
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+
+/* Remove decoration from links */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Theme Variables */
+
+:root {
+  --theme-color-p: #6d6d6d;
+  --theme-color-s: #424242;
+  --theme-color-h: #90caf9;
+  --theme-elem-bg-trans: #ffffff70;
+  --theme-elem-bg-trans-d: #00000080;
+  --theme-elem-bg-on-scroll: #fff;
+  --theme-box-shadow: 2px 3px 10px 1px var(--theme-color-s);
+  --theme-font-p: 'Spectral', sans-serif;
+  --theme-font-s: 'Raleway';
+  --theme-trans-bg: url("./img/arches.png");
+  --theme-trans-bg2: url("./img/thatch.png");
+}
+
+
+/* Settings on React Root Element */
+
+#root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Setup Grid on top level div */
+
+#top-level-container {
+  display: grid;
+  grid-template-columns: [col-start] 100% [col-end];
+  grid-template-rows: [line-one] 350px [line-two] 60px [line-three] 1fr [line-four] 50px [line-five];
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Re-used styles */
+
+p {
+  text-indent: 1em;
+}
+
+.main-font-style {
+  font-family: var(--theme-font-p);
+  color: #fff;
+}
+
+.flex-c-nw {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.prevent-click {
+  pointer-events: none;
+}
+
+.small-note {
+  margin: 0;
+  padding: 0;
+  font-family: var(--theme-font-p);
+  font-size: 0.7em;
+}
+
+.dark-bg {
+  background-color: var(--theme-color-s);
+  background-image: var(--theme-trans-bg2), radial-gradient(farthest-side, var(--theme-color-p) 5%, var(--theme-color-s));
+}
+
+.top-spacer {
+  padding-top: 3em;
+}
+
+
+/* -- BEGIN MEDIA QUERIES -- */
+
+@media only screen and (min-width: 600px) {
+
+#top-level-container {
+  grid-template-columns: [col-start] 100% [col-end];
+  grid-template-rows: [line-one] 500px [line-two] 60px [line-three] 1fr [line-four] 50px [line-five];
+}
+
+}
+
+@media only screen and (min-width: 900px) {
+
+.content-article{
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.info-article-pic {
+  width: 250px;
+  margin: 0;
+}
+
+.info-article {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.article-display-area {
+  grid-template-columns: [c1] 350px [c2] 250px [c3] 300px [c4];
+  grid-template-rows: [r1] 200px [r2] 200px [r3] 250px [r4];
+  width: 900px;
+  height: 650px;
+}
+
+}
+
+
+@media only screen and (min-width: 1055px) {
+
+.article-text-area {
+  width: 75%;
+  margin: 1em 3em;
+}
+
+.content-article{
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  padding: 0;
+}
+
+.article-pic {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+}
+
+.info-article-pic {
+  width: 300px;
+  margin-right: 1em;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1300px) {
+
+.article-pic {
+  width: auto;
+  height: 100%;
+  margin: 0;
+}
+
+
+}

@@ -1,0 +1,47 @@
+/* Import variables and general style */
+@import 'App.css';
+
+/* FOOTER */
+
+#footer-container {
+  grid-column: col-start / 2;
+  grid-row: line-four / line-five;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  z-index: 3;
+}
+
+#footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1em;
+  margin:0;
+}
+
+.footer-text {
+  font-family: var(--theme-font-p);
+  color: #000;
+  margin: 0;
+}
+
+.social-icon {
+  align-self: center;
+  margin-left: 0.4em;
+}
+
+@media only screen and (min-width:600px) {
+
+  #footer {
+    font-size: 1.2em;
+  }
+
+}

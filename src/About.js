@@ -50,12 +50,14 @@ class About extends Component {
         <AboutChooser />
 
         <Switch>
+          <Route exact path='/about'
+                 render={(props) => <FAQ handleToggleBox={this.toggleBox} />} />
           <Route path='/about/contact'
-          render={(props) => <Contact handleToggleBox={this.toggleBox} />} />
-          <Route path='/about/FAQ'
-          render={(props) => <FAQ handleToggleBox={this.toggleBox} />} />
+                 render={(props) => <Contact handleToggleBox={this.toggleBox} />} />
+          <Route exact path='/about/FAQ'
+                 render={(props) => <FAQ handleToggleBox={this.toggleBox} />} />
           <Route path='/about/equipment'
-          render={(props) => <Equipment handleToggleBox={this.toggleBox} />} />
+                 render={(props) => <Equipment handleToggleBox={this.toggleBox} />} />
         </Switch>
       </section>
     );

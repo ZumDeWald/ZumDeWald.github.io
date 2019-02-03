@@ -1,0 +1,74 @@
+/* Import variables and general style */
+@import 'App.css';
+
+/* Header & Nav */
+
+#header-nav-container {
+  position: sticky;
+  top: 0;
+  grid-column: col-start / 2;
+  grid-row: line-two / line-three;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 -1px 10px #000000a5,
+              0 0 40px #000000aa,
+              0 8px 15px var(--theme-color-s);
+  background-image: var(--theme-trans-bg);
+  transition-duration: 800ms;
+  z-index: 2;
+}
+
+#nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  font-family: var(--theme-font-s);
+  font-size: 1em;
+}
+
+.nav-bar-on-scroll {
+  background-color: var(--theme-elem-bg-trans);
+  color: #000;
+}
+
+.nav-bar-on-load {
+  background-color: var(--theme-elem-bg-on-scroll);
+  color: #000;
+}
+
+.nav-item-selected {
+  border-bottom: 3px dashed var(--theme-color-h);
+}
+
+.nav-item {
+  padding-top: 1.2em;
+  margin: 0;
+  height: 50px;
+  filter: drop-shadow(1px 2px 2px var(--theme-elem-bg-trans-d));
+  font-variant: small-caps;
+}
+
+.nav-item:hover {
+  filter: none;
+}
+
+@media only screen and (min-width:600px) {
+
+  #nav-bar {
+    font-size: 1.5em;
+  }
+
+  .nav-item {
+    padding: 0.7em 0.8em 0 0.8em;
+  }
+
+}
