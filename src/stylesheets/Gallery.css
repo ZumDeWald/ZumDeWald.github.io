@@ -29,7 +29,8 @@
   border-radius: 0.2em;
   font-size: 1.2em;
   font-family: var(--theme-font-p);
-  color: var(--theme-color-p);
+  background-color: #fff;
+  color: var(--theme-color-s);
   font-variant: small-caps;
   transition-duration: 150ms;
 }

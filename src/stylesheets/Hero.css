@@ -17,7 +17,7 @@
   position: fixed;
   top: -60px;
   width: 100%;
-  height: 90vh;
+  height: 410px;
   background-size: cover;
   background-position: center center;
   background-color: var(--theme-color-s);
@@ -32,10 +32,24 @@
   width: 22em;
 }
 
+/* Media Queries */
+
+@media only screen and (orientation:landscape) {
+  #hero {
+    height: 180px;
+  }
+
+  #logo {
+    top: 30px;
+    right: -15px;
+    width: 18em;
+  }
+}
+
 @media only screen and (min-width:600px) {
 
   #hero {
-    height: 75vh;
+    height: 410px;
   }
 
   #logo {
@@ -46,19 +60,10 @@
 
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1300px) {
 
   #hero {
-    height: 63vh;
-  }
-
-
-}
-
-@media only screen and (min-width:1055px) {
-
-  #hero {
-    height: 58vh;
+    height: 510px;
   }
 
 }
