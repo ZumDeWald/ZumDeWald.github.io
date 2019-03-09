@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import ViewerChooser from './ViewerChooser.js';
-import Viewer from './Viewer.js';
+import DropMenu from './DropMenu.js';
+import GalleryButtons from './GalleryButtons.js';
+import PicTiles from './PicTiles.js';
 import ScrollToTopOnMount from './ScrollToTopOnMount.js';
 
 class MainGallery extends Component {
@@ -55,16 +56,9 @@ class MainGallery extends Component {
       "../img/fam/fam14",
       "../img/fam/fam15",
       "../img/fam/fam16",
-      "../img/fam/fam17",
       "../img/fam/fam18",
       "../img/fam/fam19",
     ],
-  }
-
-  setTrayWidth = (lengthOfPics) => {
-    let widthToSet = (lengthOfPics * 210);
-    let viewerTray = document.getElementById("gallery-tray-list");
-    viewerTray.style.width = `${widthToSet}px`;
   }
 
   render() {
@@ -72,33 +66,29 @@ class MainGallery extends Component {
       <section id="gallery-container" className="dark-bg">
         <ScrollToTopOnMount />
 
-        <ViewerChooser />
+        <DropMenu />
+        <GalleryButtons />
 
         <Switch>
           <Route exact path="/gallery" render={() => (
-            <Viewer
-              pics={this.state.newbornPics}
-              onSetTrayWidth={this.setTrayWidth} />
+            <PicTiles
+              pics={this.state.newbornPics} />
           )} />
           <Route path="/gallery/maternity" render={() => (
-            <Viewer
-              pics={this.state.maternityPics}
-              onSetTrayWidth={this.setTrayWidth} />
+            <PicTiles
+              pics={this.state.maternityPics} />
           )} />
           <Route path="/gallery/newborn" render={() => (
-            <Viewer
-              pics={this.state.newbornPics}
-              onSetTrayWidth={this.setTrayWidth} />
+            <PicTiles
+              pics={this.state.newbornPics} />
           )} />
           <Route path="/gallery/babies" render={() => (
-            <Viewer
-              pics={this.state.babyPics}
-              onSetTrayWidth={this.setTrayWidth} />
+            <PicTiles
+              pics={this.state.babyPics} />
           )} />
           <Route path="/gallery/fam" render={() => (
-            <Viewer
-            pics={this.state.famPics}
-            onSetTrayWidth={this.setTrayWidth} />
+            <PicTiles
+            pics={this.state.famPics} />
           )} />
         </Switch>
 
