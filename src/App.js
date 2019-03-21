@@ -24,7 +24,7 @@ class App extends Component {
     const navBar = document.getElementById("header-nav-container");
 
     //Opacity change for Nav Menu
-    if (scrollAmount > 500) {
+    if (scrollAmount > 450) {
       navBar.classList.add("nav-bar-on-scroll");
       navBar.classList.remove("nav-bar-on-load");
     } else {

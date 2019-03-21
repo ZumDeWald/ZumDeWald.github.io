@@ -25,7 +25,7 @@
   background-color: #fff;
   color: var(--theme-color-s);
   font-variant: small-caps;
-  transition-duration: 150ms;
+  transition-duration: 200ms;
 }
 
 .gallery-chooser-button:hover {
@@ -34,8 +34,8 @@
 }
 
 #gallery-button-current>button {
-  color: #000;
-  font-size: 1.3em;
+  color: #fff;
+  background-color: #000
 }
 
 .gallery-viewer-area {
@@ -154,7 +154,7 @@
   margin: 0;
 }
 
-/* TILE VIEWER */
+/* VIEWER */
 .picture-viewer {
   position: sticky;
   top: 60px;
@@ -167,7 +167,21 @@
   background-color: #000000d5;
 }
 
+.pic-and-icons {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 325px;
+  height: 250px;
+}
+
 .viewer-pic {
+  padding: 0;
+  margin: 0;
   max-width: 325px;
   max-height: 250px;
 }
@@ -178,7 +192,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 90%;
   padding: 0 0.2em;
   margin: 0;
   color: #fff;
@@ -233,13 +247,18 @@
     margin: 0;
   }
 
+  .pic-and-icons {
+    width: 400px;
+    height: 280px;
+  }
+
   .viewer-pic {
     max-width: 400px;
     max-height: 280px;
   }
 
   .pic-change-icon:hover {
-    background-color: gray;
+    background-color: #000000b5;
   }
 
 }
@@ -250,6 +269,11 @@
     width: 100%;
     height: 400px;
     max-height: calc(100vh - 400px);
+  }
+
+  .pic-and-icons {
+    width: 550px;
+    height: calc(100vh - 420px);
   }
 
   .viewer-pic {
@@ -268,6 +292,11 @@
   .picture-viewer {
     width: 100%;
     height: 450px;
+  }
+
+  .pic-and-icons {
+    width: 600px;
+    height: calc(100vh - 420px);
   }
 
   .viewer-pic {
@@ -303,6 +332,11 @@
     width: 100%;
     height: 650px;
     max-height: calc(100vh - 400px);
+  }
+
+  .pic-and-icons {
+    width: 800px;
+    height: calc(100vh - 420px);
   }
 
   .viewer-pic {

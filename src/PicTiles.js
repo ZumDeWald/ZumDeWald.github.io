@@ -39,8 +39,8 @@ const PicTiles = (props) => {
   return (
     <section>
       <Viewer currentPic={currentPic}
-                 handleNextPic={setNextPic}
-                 handlePrevPic={setPrevPic} />
+              handleNextPic={setNextPic}
+              handlePrevPic={setPrevPic} />
       <article className="gallery-viewer-area">
         <ul className="tile-list">
           {pics.map((pic, index) => (
